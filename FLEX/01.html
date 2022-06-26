@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./default.css">
+  <link rel="stylesheet" href="./output.css">
+  <title>flex01</title>
+  <style>
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    .flex-item:nth-child(2) {
+      align-self: center;
+      z-index: 100;
+      transform: scale(3);
+      opacity: .4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item">AAAAA</div>
+    <div class="flex-item">BBBBBBBBBB</div>
+    <div class="flex-item">CCCCCC</div>
+  </div>
+</body>
+
+</html>
